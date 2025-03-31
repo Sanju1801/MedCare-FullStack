@@ -12,17 +12,17 @@ export default function EmergencyContact() {
 
       <div className={styles.card}>
         <span className={styles.text}>Ambulance</span>
-        <span className={styles.number}>911</span>
+        <span className={styles.number}>102</span>
       </div>
 
       <div className={styles.card}>
-        <span className={styles.text}>Medical Helpline</span>
-        <span className={styles.number}>+1 800-555-1234</span>
+        <span className={styles.text}>Police</span>
+        <span className={styles.number}>112</span>
       </div>
 
       <div className={styles.card}>
         <span className={styles.text}>Emergency Support</span>
-        <span className={styles.number}>+1 800-555-5678</span>
+        <span className={styles.number}>9188-664-421</span>
       </div>
     </div>
   );
