@@ -48,7 +48,7 @@ const SignupComponent = () => {
   };
 
   const handleGoogleSignup = () => {
-    window.location.href = "http://localhost:3001/google";
+    router.push("http://localhost:3001/google");
   };
 
   useEffect(() => {
