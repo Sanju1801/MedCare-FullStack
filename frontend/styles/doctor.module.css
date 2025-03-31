@@ -1,0 +1,89 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #F8FCF9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #1C4A2A; 
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.addButton {
+    padding: 10px 15px;
+    color: #1C4A2A;
+    background-color: #F8FCF9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background-color: #339caa;
+    color: white;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #F8FCF9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: #1C4A2A;
+    color: white;
+    font-weight: bold;
+}
+
+.doctorLink {
+    color: #dc2626;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.doctorImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.table td {
+    vertical-align: middle;
+}
+
+
+.deleteButton {
+    padding: 8px 12px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ef4444;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #dc2626;
+}

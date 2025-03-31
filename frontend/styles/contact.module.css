@@ -1,0 +1,51 @@
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.heading {
+    font-size: 22px;
+    color: #1C4A2A;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F8FCF9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1C4A2A;
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #D32F2F;
+}

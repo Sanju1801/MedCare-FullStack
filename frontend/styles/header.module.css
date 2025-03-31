@@ -1,0 +1,160 @@
+.header {
+  height: 75px;
+  width: 100%;
+  background: white;
+  padding: 16px 50px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.logo {
+  display: flex;
+  color: #1C4A2A;
+  align-items: center;
+  gap: 4px;
+}
+
+.trust {
+  background: #1C4A2A;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 25px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.navLinks li {
+  cursor: pointer;
+  color: #8C8C8C;
+  font-weight: 200;
+}
+
+.navLinks li.active {
+  color: #1C4A2A;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navBtns a {
+  text-decoration: none;
+}
+
+.navBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  border-radius: 8px;
+  margin: 0 6px;
+  padding: 6px 24px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1.5px solid #E0E8E0;
+  background: white;
+  color: #0E2515;
+}
+
+.activeBtn {
+  background-color: #1C4A2A;
+  color: white;
+}
+
+.inactiveBtn {
+  background: white;
+  color: #0E2515;
+}
+
+.inactiveBtn:hover {
+  background-color: #1C4A2A;
+  color: white;
+}
+
+/* Hamburger Icon */
+.menuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logoutBtn {
+  background-color: #f39a25;
+  color: white;
+  font-weight: 600;
+
+}
+
+.logoutBtn:hover {
+  background-color: #f05c06;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px;
+    z-index: 1000;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    background: white;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .navBtns {
+    display: none;
+  }
+
+  .logoutBtn {
+    border-radius: 8px;
+    padding: 5px 20px;
+  }
+}

@@ -1,0 +1,133 @@
+.profileContainer {
+    background: #F8FCF9;
+    margin: 10px auto;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 32px;
+    width: 100%;
+    border-bottom: 1px solid #666;
+}
+
+.profilePic {
+    border-radius: 50%;
+}
+
+.info {
+    align-items: start;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.specialty {
+    font-size: 1.1rem;
+    color: #1C4A2A;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.experience, .location , .ratingText {
+    font-size: 1rem;
+    color: #555;
+}
+
+.rating {
+    display: flex;
+    gap: 4px;
+}
+
+.availability {
+    margin: 1rem;
+    text-align: center;
+}
+
+.availability h3 {
+    font-size: 1.2rem;
+    color: #1C4A2A;
+    margin-bottom: 0.5rem;
+}
+
+.availability ul {
+    list-style: none;
+    padding: 0;
+}
+
+.availability li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 0.3rem;
+}
+
+.line {
+    color: #555;
+}
+
+.btnContainer {
+    margin: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.bookBtn {
+    background-color: #1C4A2A;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    width: 180px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.addReviewBtn {
+    background-color: #f39a25;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    width: 180px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.bookBtn:hover {
+    background-color: #163C21;
+}
+
+.addReviewBtn:hover {
+    background-color: #ee8f13;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnContainer {
+        flex-direction: column;
+    }
+
+    .bookBtn, .addReviewBtn {
+        width: 100%;
+    }
+}

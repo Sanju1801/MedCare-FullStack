@@ -1,0 +1,108 @@
+.container {
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #221E20;
+}
+.bookBtn {
+    background-color: rgba(28, 74, 42, 1);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 32px;
+    border-radius: 6px;
+}
+
+.middle {
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #F4D7D0;
+    margin: 16px auto;
+    font-size: 14px;
+    /* height: 32px; */
+}
+
+.videoConsult {
+    border-radius: 6px 0 0 6px;
+}
+.hospitalVisit {
+    border-radius: 0 6px 6px 0;
+}
+.videoConsult,
+.hospitalVisit {
+    width: 100%;
+    padding: 6px 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.active {
+    background-color: rgba(28, 74, 42, 1);
+    color: white;
+}
+.inactive {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+#list {
+    height: 30px;
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #D3D4DB;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#list:focus {
+    outline: none;
+}
+#list:active {
+    outline: none;
+}
+.disabledDropdown {
+    pointer-events: none;
+    opacity: 0.5;
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 580px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 6px auto;
+    }
+    .title {
+        font-size: 1.2rem;
+    }    
+
+    .bookBtn {
+        width: 100%;
+    }
+
+    .middle {
+        flex-direction: column;
+        border-radius: 4px;
+    }
+
+    .videoConsult {
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        padding: 0.375rem 0.5rem;
+    }
+    .hospitalVisit {
+        width: 100%;
+        border-radius: 0 0 4px 4px;
+        padding: 0.375rem 0.5rem;
+    }
+
+}

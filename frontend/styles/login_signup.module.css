@@ -1,0 +1,112 @@
+.mainContainer {
+    background-image: url("/login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: calc(100vh - 75px); */
+    height: 100%;
+}
+
+.signupContainer {
+    padding: 10px;
+}
+
+.loginContainer {
+    padding: 45px;
+}
+
+.container {
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fields {
+    max-width: 36%;
+    background-color: rgba(239, 239, 239, 0.6);
+    border: 1px solid rgba(239, 239, 239, 1);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.signupFields {
+    height: 540px;
+}
+.loginFields {
+    height: 460px;
+}
+
+.fields h6 {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 4px;
+    color: #0E2515;
+}
+
+.p_tag {
+    color: gray;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#signup_route {
+    font-weight: 500;
+    color: #0E2515;
+    display: inline-block;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #0E2515;
+}
+
+@media (max-width: 768px) {
+    .mainContainer {
+        padding: 5px;
+    }
+    .fields {
+        width: 90%;
+        min-width: 280px;
+        padding: 8px;
+    }
+    .signupFields {
+        height: 100%;
+    }
+    .loginFields {
+        height: 100%;
+    }
+
+    .fields h6 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+
+    .section {
+        width: 100%;
+        gap: 12px;
+    }
+}

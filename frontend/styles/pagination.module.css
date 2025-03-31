@@ -1,0 +1,28 @@
+.container {
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagInfo {
+    border: 1px solid #1C4A2A;
+    padding: 10px 30px;
+    color: #1C4A2A;
+    font-size: 16;
+}
+
+.btn {
+    border: 1px solid #ccd3cc;
+    background: #E0E8E0;
+    border-radius: 6px;
+    color: #1C4A2A;
+    padding: 4px 10px;
+    font-size: 18;
+}
+
+.btn:hover {
+    background: #1C4A2A;
+    color: white
+}

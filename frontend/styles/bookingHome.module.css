@@ -1,0 +1,76 @@
+.mainContainer {
+    height: calc(100vh - 75px);
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 100%;
+  }
+  
+  .leftContainer {
+    background-color: #1C4A2A;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+    gap: 50px;
+  }
+  
+  .titleContainer {
+    color: white;
+    padding-right: 60px;
+  }
+  
+  .titleContainer h1 {
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+  
+  .titleContainer p {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+  
+  .rightContainer {
+    width: 55%;
+    background-image: url('/Appointment-booking.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 60px;
+    min-height: calc(100vh - 75px);
+    /* height: 100%; */
+  }
+  
+  @media (max-width: 1060px) {
+    .mainContainer {
+        flex-direction: column;
+        height: auto;
+    }
+  
+    .leftContainer {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .titleContainer {
+        padding: 20px;
+    }
+  
+    .rightContainer {
+        width: 100%;
+        min-height: 300px;
+    }
+  
+    .titleContainer h1 {
+        font-size: 1.8rem;
+    }
+  
+    .titleContainer p {
+        font-size: 1rem;
+        display: block; 
+    }
+  }
+  

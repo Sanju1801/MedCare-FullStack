@@ -1,0 +1,62 @@
+.card {
+    border: 1px solid #E0E8E0;
+    border-radius: 8px;
+    background: #F8FCF9;
+    padding: 20px;
+    width: 260px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: small;
+}
+.profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profilePic {
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 16;
+    font-weight: 700;
+    margin: 20px 0 12px 0;
+    color: #0E2515;
+    
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    gap: 15;
+    color: #8C8C8C;
+}
+.descTitle {
+    display: flex;
+    gap: 2px;
+}
+.rating {
+    display: flex;
+    margin: 20px 0;
+    color: #8C8C8C;
+    gap: 2px;
+}
+.rating span {
+    margin-right: 5px;
+}
+.bookBtn {
+    padding: 16px;
+    font-weight: 700;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.bookBtn:hover {
+    background-color: #0E2515;
+    color: white;
+}
