@@ -12,10 +12,6 @@ export default function Doctor() {
     const [popupMessage, setPopupMessage] = useState(""); 
 
     useEffect(() => {
-        checkAdminAuth(); 
-    }, []);
-
-    const checkAdminAuth = () => {
         const token = localStorage.getItem("token");
         const role = localStorage.getItem("role");
 
@@ -27,7 +23,7 @@ export default function Doctor() {
         }
 
         fetchDoctors(token); 
-    };
+    }, []);
 
     const fetchDoctors = async (token) => {
         try {

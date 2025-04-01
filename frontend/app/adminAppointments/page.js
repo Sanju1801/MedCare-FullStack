@@ -12,9 +12,12 @@ export default function Appointments() {
     const router = useRouter();
 
     useEffect(() => {
-        const role = localStorage.getItem("role"); 
-        if (role !== "admin") {
-            router.replace("/login");
+        const role = localStorage.getItem("role");
+        const token = localStorage.getItem("token");
+        if (!token || role !== "admin") {
+            setPopupMessage("Unauthorized access. Redirecting to login...");
+            setShowPopup(true);
+            setTimeout(() => router.push("/login"), 2000);
             return;
         }
         fetchAppointments();
