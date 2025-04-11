@@ -1,6 +1,6 @@
 import config from "../config/index.js";
 import pool from "../db/index.js";
-import bcrypt from "bcrypt";
+import bcrypt from 'bcryptjs';
 
 
 export const seedingAdmin = async () => {

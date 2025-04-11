@@ -1,17 +1,18 @@
 import nodemailer from 'nodemailer';
+import config from '../config/index.js';
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'sanju.kumari@tothenew.com', 
-        pass: 'mfzf nkph kqgh nazi' 
+        user: config.userEmail, 
+        pass: config.userPassword
     }
 });
 
 export const sendEmail = async (mail_to, subject, text) => {
     try {
         const mailOptions = {
-            from: 'sanju.kumari@gmail.com',
+            from: config.userEmail,
             to: mail_to,
             subject: subject,
             text: text

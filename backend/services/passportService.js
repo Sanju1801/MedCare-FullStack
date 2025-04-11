@@ -1,6 +1,6 @@
 import passport from 'passport'
 import pool from '../db/index.js';
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import config from '../config/index.js';
 import jwt from "jsonwebtoken";
 import { Strategy as JwtStrategy, ExtractJwt } from "passport-jwt";
@@ -44,6 +44,7 @@ passport.use(
 );
 
 // ********************* JWT Strategy for protecting routes *******************************************//
+/*
 const jwtOptions = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
   secretOrKey: config.jwtSecret
@@ -66,7 +67,7 @@ passport.use(
     }
   })
 );
-
+*/
 
 passport.serializeUser((user, done) => {
   done(null, user.email);
