@@ -34,13 +34,11 @@ const SignupComponent = () => {
       if(response.ok){
         localStorage.setItem("token", data.token);
         console.log("Token:", data.token);
-
         router.replace("/appointments");
       }
       else {
         throw new Error(data.message || "Signup failed");
       }
-
 
     } catch (err) {
       setError(err.message);

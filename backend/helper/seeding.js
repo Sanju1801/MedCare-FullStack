@@ -21,6 +21,7 @@ export const seedingAdmin = async () => {
 
     return true;
   } catch (err) {
+    console.error("SEEDING ERROR:", err);
     throw new Error(
       "Error while seeding admin, Please restart the server",
       err.message

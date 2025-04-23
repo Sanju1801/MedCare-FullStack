@@ -66,7 +66,7 @@ export default function Doctor() {
         <div className={styles.container}>
             <div className={styles.header}>
                 <h1 className={styles.title}>Doctor Management</h1>
-                <button className={styles.addButton} onClick={() => router.push("/addDoctor")}>
+                <button className={styles.addButton} onClick={() => router.push("/admin/addDoctor")}>
                     Add Doctor
                 </button>
             </div>

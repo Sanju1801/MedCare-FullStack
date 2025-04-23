@@ -38,7 +38,7 @@ const LoginComponent = () => {
         localStorage.setItem("role", data.user.role);
   
         if (data.user.role === "admin") {
-          router.replace("/adminDashboard");
+          router.replace("/admin/adminDashboard");
         } else {
           router.replace("/appointments");
         }

@@ -83,14 +83,14 @@ export default function Header() {
                     </ul>
                     </> ) : (<>
                         <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
-                        <li className={pathname === '/adminDashboard' ? styles.active : ''}>
-                            <Link href="/adminDashboard">Dashboard</Link>
+                        <li className={pathname === '/admin/adminDashboard' ? styles.active : ''}>
+                            <Link href="/admin/adminDashboard">Dashboard</Link>
                         </li>
-                        <li className={pathname === '/adminAppointments' ? styles.active : ''}>
-                            <Link href="/adminAppointments">Appointments</Link>
+                        <li className={pathname === '/admin/adminAppointments' ? styles.active : ''}>
+                            <Link href="/admin/adminAppointments">Appointments</Link>
                         </li>
-                        <li className={pathname === '/doctor' ? styles.active : ''}>
-                            <Link href="/doctor">Doctors</Link>
+                        <li className={pathname === '/admin/doctor' ? styles.active : ''}>
+                            <Link href="/admin/doctor">Doctors</Link>
                         </li>
                         <li className={pathname === '/contact' ? styles.active : ''}>
                             <Link href="/contact">Contact</Link>

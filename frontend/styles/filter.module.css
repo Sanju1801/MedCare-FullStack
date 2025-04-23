@@ -10,6 +10,12 @@
 .resetBtn {
     font-weight: 700;
     color: #1C4A2A;
+    cursor: pointer;
+}
+
+.resetBtn:hover {
+    color: cadetblue;
+    text-decoration: underline;
 }
 
 .subContainer {

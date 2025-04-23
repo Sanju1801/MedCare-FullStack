@@ -73,7 +73,7 @@ export default function DoctorForm() {
                         LabelName="Name"
                         color="rgba(28, 74, 42, 1)"
                         input_type="text"
-                        img_url="./name.svg"
+                        img_url="/name.svg"
                         placeholder_name="Enter Doctor's Name"
                         value={name}
                         change={setName} 
@@ -82,7 +82,7 @@ export default function DoctorForm() {
                         LabelName="Title (expertise)"
                         color="rgba(28, 74, 42, 1)"
                         input_type="text"
-                        img_url="./Stethoscope.svg"
+                        img_url="/Stethoscope.svg"
                         placeholder_name="Enter Doctor's Title"
                         value={title}
                         change={setTitle}
@@ -91,7 +91,7 @@ export default function DoctorForm() {
                         LabelName="Years of Experience"
                         color="rgba(28, 74, 42, 1)"
                         input_type="number"
-                        img_url="./age.svg"
+                        img_url="/age.svg"
                         placeholder_name="Enter YOE"
                         value={YOE}
                         change={setYOE}
@@ -100,7 +100,7 @@ export default function DoctorForm() {
                         LabelName="Profile Picture URL"
                         color="rgba(28, 74, 42, 1)"
                         input_type="text"
-                        img_url="./profile.svg"
+                        img_url="/profile.svg"
                         placeholder_name="Enter Picture URL"
                         value={picture_url}
                         change={setPictureUrl}

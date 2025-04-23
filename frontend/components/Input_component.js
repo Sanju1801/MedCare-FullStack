@@ -26,7 +26,7 @@ const InputComponent = ({
           )}
           <input
             className={styles.input_field}
-            type={toggleState ? "text" : input_type}
+            type={isPasswordFlag ? (toggleState ? "text" : "password") : input_type}
             placeholder={placeholder_name}
             value={value}
             onChange={((e)=>change(e.target.value))}

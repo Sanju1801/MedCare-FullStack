@@ -26,13 +26,13 @@ export default function AdminDashboard() {
             <div className={styles.buttonContainer}>
                 <button
                     className={`${styles.button} ${styles.doctorButton}`}
-                    onClick={() => router.push("/doctor")}
+                    onClick={() => router.push("/admin/doctor")}
                 >
                     Doctor
                 </button>
                 <button
                     className={`${styles.button} ${styles.appointmentButton}`}
-                    onClick={() => router.push("/adminAppointments")}
+                    onClick={() => router.push("/admin/adminAppointments")}
                 >
                     Appointment
                 </button>

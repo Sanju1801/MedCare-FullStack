@@ -23,7 +23,7 @@
 }
 
 .input_field{
-    width: 212px;
+    width: 100%;
     max-width: 95%;
     height: 20px;
     font-weight: 500;

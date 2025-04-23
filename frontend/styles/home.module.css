@@ -40,9 +40,20 @@
   border-radius: 8px;
   width: fit-content;
   cursor: pointer;
-  font-weight: 200;
+  font-weight: 500; /* Slightly bolder for better readability */
   border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  will-change: transform;
 }
+
+.startBtn:hover {
+  background-color: #f39a25;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05) translateY(-2px);
+}
+
 
 .startBtn a {
   text-decoration: none;

@@ -3,17 +3,28 @@
     border-radius: 8px;
     background: #F8FCF9;
     padding: 20px;
-    width: 260px;
-    height: 380px;
+    width: 240px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: small;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #E8F5E9;
+}
+
 .profile {
     text-align: center;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -24,9 +35,7 @@
 .name {
     font-size: 16;
     font-weight: 700;
-    margin: 20px 0 12px 0;
-    color: #0E2515;
-    
+    color: #0E2515;   
 }
 
 .description {
@@ -41,7 +50,6 @@
 }
 .rating {
     display: flex;
-    margin: 20px 0;
     color: #8C8C8C;
     gap: 2px;
 }
@@ -49,11 +57,16 @@
     margin-right: 5px;
 }
 .bookBtn {
+    margin-top: 14px;
+    background-color:cadetblue;
+    color: white;
     padding: 16px;
     font-weight: 700;
     border: 1px solid #DEDEDE;
     border-radius: 10px;
     width: 100%;
+    box-shadow: 4px 4px 10px rgba(4, 100, 44, 0.1);
+    cursor: pointer;
 }
 
 .bookBtn:hover {
