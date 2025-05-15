@@ -1,7 +1,6 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/appointment.module.css";
-import Footer from "@/components/Footer";
 import Search from "@/components/Search";
 import Filter from "@/components/Filter";
 import Doctor_card from "@/components/Doctor_card";
@@ -96,7 +95,6 @@ export default function Appointment() {
                     totalPages={totalPages} 
                     onPageChange={setCurrentPage} 
                 />
-                <Footer />
             </div>
         </>
     );
